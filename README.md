@@ -11,6 +11,14 @@ Uses a K-Nearest Neighbors Algorithm to predict which binaries are benign versus
 
 ===============================================================================
 
+Current status / Notes
+
+Error in prediction from MLDetect - "float() argument must be a string or a number" in line 47, knn.fit
+Going to try replacing "MALWARE" vs "SAFE" labels with "1" vs "0" labels
+
+
+===============================================================================
+
 analyzetargetfile - Template script for scraping opcodes from a binary
 
 formattrainingdata - Collect opcodes from all desired binaries (the production version of analyzetargetfile)
